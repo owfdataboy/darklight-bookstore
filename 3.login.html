@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darklight Ebook</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/plyr@3.6.4/dist/plyr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rangeslider-js@3.2.5/dist/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="container"> 
+        <div class="header-wrapper d-flex align-items-center justify-content-between"> 
+          <div class="header-logo"> <a href="1.index.html"><img src="./assets/images/logo.svg" alt=""></a></div>
+          <form class="header-search d-flex" action="#">
+            <div class="search-filter">
+              <select style="display: none;">
+                <option value="all">Tất cả các sách</option>
+              </select>
+              <div class="dropdown js-dropdown-option">
+                <button class="dropdown-toggle button-component hide-dropdown-icon d-flex align-items-center justify-content-center" id="headerSearchFilter" data-toggle="dropdown" aria-expanded="false" type="button"><svg class="button-icon" fill="#00559F" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66667 8H7.33333V6.66667H4.66667V8ZM0 0V1.33333H12V0H0ZM2 4.66667H10V3.33333H2V4.66667Z"/></svg><span class="button-title">Tất cả các sách</span></button>
+                <ul class="dropdown-menu custom-style-dropdown" aria-labelledby="headerSearchFilter">
+                  <li>
+                    <div class="dropdown-item" data-selectvalue="all">
+                      <div class="button-component d-flex align-items-center justify-content-center"><svg class="button-icon" fill="#00559F" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.66667 8H7.33333V6.66667H4.66667V8ZM0 0V1.33333H12V0H0ZM2 4.66667H10V3.33333H2V4.66667Z"/></svg><span class="button-title">Tất cả các sách</span></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="search-input"> 
+              <input type="text" placeholder="Nhập tên sách, tác giả bạn muốn tìm kiếm...">
+            </div>
+            <div class="search-btn"> <a class="button-component d-flex align-items-center justify-content-center primary icon" href="undefined"><img class="button-icon" src="./assets/images/../icons/icon-search-white.svg" alt=""></a>
+            </div>
+          </form>
+          <div class="header-btn-groups d-flex">
+            <div data-toggle="modal" data-target="#modalLogin"><a class="button-component d-flex align-items-center justify-content-center outline-primary" href="9.cart.html"><img class="button-icon" src="./assets/images/book-sharp.svg" alt=""><span class="button-title">Sách của tôi</span>
+                    <div class="button__notification">1</div></a>
+            </div><a class="button-component d-flex align-items-center justify-content-center outline-primary" href="2.register.html"><svg fill="#00559F" class="button-icon" width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0918 12.6665C14.748 12.6665 16.0918 11.3228 16.0918 9.6665V3.6665C16.0918 2.01025 14.748 0.666504 13.0918 0.666504H10.4668C10.248 0.666504 10.0918 0.854004 10.0918 1.0415V1.7915C10.0918 2.01025 10.248 2.1665 10.4668 2.1665H13.0918C13.9043 2.1665 14.5918 2.854 14.5918 3.6665V9.6665C14.5918 10.5103 13.9043 11.1665 13.0918 11.1665H10.4668C10.248 11.1665 10.0918 11.354 10.0918 11.5415V12.2915C10.0918 12.5103 10.248 12.6665 10.4668 12.6665H13.0918ZM5.31055 1.2915L4.68555 1.9165C4.5293 2.0415 4.5293 2.2915 4.68555 2.44775L8.2168 5.854H0.466797C0.248047 5.854 0.0917969 6.0415 0.0917969 6.229V7.104C0.0917969 7.32275 0.248047 7.479 0.466797 7.479H8.2168L4.68555 10.9165C4.5293 11.0728 4.5293 11.3228 4.68555 11.4478L5.31055 12.0728C5.43555 12.229 5.68555 12.229 5.8418 12.0728L10.9668 6.94775C11.123 6.7915 11.123 6.57275 10.9668 6.4165L5.8418 1.2915C5.68555 1.13525 5.43555 1.13525 5.31055 1.2915Z"/></svg><span class="button-title">Đăng ký</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body"> 
+            <div class="brcrumb">
+              <div class="container">
+                <ul class="brcrumb__list">
+                  <li class="brcrumb__list-item"><a class="item__links item__links" href="#">Trang chủ /</a></li>
+                  <li class="brcrumb__list-item"><a class="item__links" href="#">Đăng nhập</a></li>
+                </ul>
+                <div class="brcrumb__info">
+                  <h1 class="brcrumb__info-title">Đăng nhập</h1>
+                </div>
+              </div>
+            </div>
+      <div class="login-wrap">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 login-fix">
+              <div class="login">
+                <div class="row">
+                  <div class="login__email col-lg-7 col-sm-6">
+                    <div class="login__email-heading">
+                      <h3>Đăng nhập</h3><a class="heading__register" href="2.register.html">Đăng kí</a>
+                    </div>
+                    <form action="./my-account-desktop.html" name="login__email-form">
+                      <input type="email" placeholder="Nhập email">
+                      <div class="form__showPassword">
+                        <input class="nxb__pw" type="password" placeholder="Nhập mật khẩu">
+                        <div class="form__showPassword-icon icon__small"><svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.2772 0.231734C16.9802 -0.0772445 16.4991 -0.0772445 16.2021 0.231734L13.1143 3.44903C11.8898 2.76016 10.5226 2.39253 9.13101 2.37792C3.75068 2.37792 0.262705 8.05696 0.116612 8.29877C-0.0388708 8.55663 -0.0388708 8.88449 0.116612 9.14234C1.11299 10.6917 2.3647 12.0451 3.81383 13.1398L1.74494 15.2955C1.54244 15.4933 1.45943 15.7904 1.52834 16.0706C1.59725 16.3508 1.80715 16.5697 2.07602 16.6417C2.34489 16.7137 2.63006 16.6274 2.82009 16.4165L17.2772 1.35279C17.5743 1.04319 17.5743 0.541333 17.2772 0.231734ZM6.08741 8.72055C6.08741 6.96908 7.45008 5.54924 9.13101 5.54924C9.67166 5.5522 10.2012 5.70961 10.6619 6.00432L6.52416 10.3149C6.24177 9.83491 6.09074 9.28357 6.08741 8.72055ZM15.7027 5C16.6598 5.90875 17.5043 6.94245 18.216 8.07636C18.3725 8.34029 18.3725 8.67586 18.216 8.93979C18.0689 9.18729 14.5587 15 9.14392 15C8.30248 14.9944 7.4669 14.8513 6.66667 14.5756L15.7027 5Z" fill="#C1C0C8"/></svg></div>
+                      </div>
+                      <button class="login__email-btn"><span>Đăng nhập</span></button>
+                    </form><a class="login__email-forget" href="">Quên mật khẩu ?</a>
+                  </div>
+                  <div class="login__social col-lg-5 col-sm-6"><span>——  Đăng nhập qua  —— </span>
+                    <button class="login__social-btn btn__google"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.8821 8.88188L19.7793 8.43234H10.294V12.5677H15.9613C15.3729 15.4458 12.6425 16.9608 10.4123 16.9608C8.78953 16.9608 7.07895 16.2577 5.94676 15.1275C5.34941 14.5217 4.87393 13.8005 4.54753 13.0051C4.22113 12.2098 4.05022 11.356 4.0446 10.4925C4.0446 8.75062 4.80455 7.00828 5.91035 5.86219C7.01615 4.71609 8.68623 4.07484 10.3468 4.07484C12.2485 4.07484 13.6114 5.115 14.121 5.58938L16.9738 2.66625C16.137 1.90875 13.838 0 10.2548 0C7.49033 0 4.83959 1.09078 2.90193 3.08016C0.989761 5.03906 0 7.87172 0 10.5C0 13.1283 0.936519 15.8194 2.78953 17.7938C4.76951 19.8994 7.57361 21 10.461 21C13.0881 21 15.5782 19.9397 17.3529 18.0159C19.0976 16.1222 20 13.5019 20 10.755C20 9.59859 19.8871 8.91187 19.8821 8.88188Z" fill="white"/></svg><span>Google</span></button>
+                    <button class="login__social-btn btn__facebook"><svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.78909 21V11.4209H11.327L11.8568 7.68773H7.78909V5.30435C7.78909 4.22352 8.11934 3.48696 9.82479 3.48696L12 3.4861V0.147138C11.6238 0.101643 10.3326 0 8.83033 0C5.69414 0 3.54702 1.73974 3.54702 4.93463V7.68773H0V11.4209H3.54702V21H7.78909Z" fill="white"/></svg><span>Facebook</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="footer"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-12 col-lg-4 col-md-4">
+            <div class="footer__content footer__info"> <a class="footer__logo d-flex" href="/"><img src="./assets/images/logo.svg" alt=""></a>
+              <div class="footer-list footer-recomend"> 
+                <h3 class="footer-content-title">Giới Thiệu </h3>
+                <p class="footer-info-descrip">Với mong muốn chia sẻ nguồn tri thức mở trên toàn thế giới, Darklight Ebook mong muốn mang tới kho tàng tri thức tới cho mọi người.</p>
+                <div class="footer-detail d-flex"> <a class="detail-title" href="#">Chi tiết <img src="./assets/icons/icon-arrow-right-blue.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <div class="footer__content footer-middle">
+              <h3 class="footer-content-title mt-4 mb-3">Hướng dẫn</h3>
+              <ul class="footer__content-list">
+                <li class="content-list__item"> <a href="#"> Điều khoản sử dụng </a></li>
+                <li class="content-list__item"> <a href="#"> Chúng tôi là ai </a></li>
+                <li class="content-list__item"> <a href="#"> Đăng ký tài khoản </a></li>
+                <li class="content-list__item"> <a href="#"> Câu hỏi thường gặp  </a></li>
+                <li class="content-list__item"> <a href="#"> Dịch vụ</a></li>
+                <li class="content-list__item"> <a href="#"> Chủ đề nổi bật      </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <div class="footer__content footer-end">   
+              <h3 class="footer-content-title mt-4 mb-3">Liên hệ  </h3>
+              <div class="footer-contact footer-list"> 
+                <div class="footer-contact-item"> <img src="./assets/icons/icon-map-marker-gray.svg" alt=""><span class="footer-info-descrip">888 Hanoi, Vietnam</span></div>
+                <div class="footer-contact-item"> <img src="./assets/icons/icon-phone-gray.svg" alt=""><span class="footer-info-descrip">(+84) 111 111 111                </span></div>
+                <div class="footer-contact-item"> <img src="./assets/icons/icon-mail-gray.svg" alt=""><span class="footer-info-descrip">contact@darklightebook.com  </span></div>
+                <div class="footer-contact-item"> <a class="button-component d-flex align-items-center justify-content-center primary" href="#"><span class="button-title">Liên hệ ngay</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-copyright">
+      <div class="footer-endbox d-flex justify-content-center"><span>Copyright © 2021 Darklightebook.net, All rights reserved.                            </span></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"> </script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/rangeslider-js@3.2.5/dist/rangeslider-js.min.js"> </script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
