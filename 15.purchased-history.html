@@ -52,17 +52,17 @@
               <div class="container">
                 <ul class="brcrumb__list">
                   <li class="brcrumb__list-item"><a class="item__links item__links" href="#">Trang chủ /</a></li>
-                  <li class="brcrumb__list-item"><a class="item__links" href="#">Thông tin tài khoản</a></li>
+                  <li class="brcrumb__list-item"><a class="item__links" href="#">Lịch sử mua hàng</a></li>
                 </ul>
                 <div class="brcrumb__info">
-                  <h1 class="brcrumb__info-title">Thông tin tài khoản</h1>
+                  <h1 class="brcrumb__info-title">Lịch sử mua hàng</h1>
                 </div>
               </div>
             </div>
       <div class="my-account">
         <div class="container">
           <div class="row"> 
-            <div class="col-lg-3 col-md-12">
+            <div class="col-lg-3 col-md-4">
                             <div class="sidebar is-sticky">
                               <div class="sidebar__user d-flex align-items-center"><img class="user__photo" src="./assets/images/my-account/user-photo.svg" alt="">
                                 <div class="user__full-name">
@@ -83,13 +83,13 @@
                                       </div>
                                     </div>
                                   </li>
-                                  <li class="nav-item active">
+                                  <li class="nav-item">
                                     <div class="nav-line"></div><a class="nav-link" href="11.user-info.html"><img src="./assets/images/my-account/account.svg" alt="">Thông tin khách hàng</a>
                                   </li>
                                   <li class="nav-item">
                                     <div class="nav-line"></div><a class="nav-link" href="#"><img src="./assets/images/my-account/password-change.svg" alt="">Đổi mật khẩu</a>
                                   </li>
-                                  <li class="nav-item">
+                                  <li class="nav-item active">
                                     <div class="nav-line"></div><a class="nav-link" href="15.purchased-history.html"><img src="./assets/images/my-account/history.svg" alt="">Lịch sử mua hàng</a>
                                   </li>
                                   <li class="nav-item">
@@ -99,38 +99,101 @@
                               </div>
                             </div>
             </div>
-            <div class="col-lg-9 col-md-12 pl-13">
-              <div class="my-account-content">
-                <h2 class="content__heading">Thông tin tài khoản </h2>
-                <form action="">
-                  <div class="form-group d-block d-md-flex align-items-center">
-                    <label>Tên đầy đủ của bạn</label>
-                    <div class="form-input">
-                      <input class="form-control" placeholder="Họ và tên" value="Nguyễn Văn A"><img class="lazy" data-src="./assets/images/login-register/account.svg">
-                    </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="content content-purchase">
+                <div class="purchase-history table-history">
+                                    <div class="table-top">
+                                      <h3>Lịch sử mua hàng</h3>
+                                    </div>
+                  <div class="purchase-history__table table-responsive-xl">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">STT</th>
+                          <th scope="col">Mã đơn</th>
+                          <th scope="col">Ngày đặt</th>
+                          <th scope="col">Số tiền</th>
+                          <th scope="col">Trạng thái</th>
+                          <th scope="col">Hành động</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>#1938</td>
+                          <td>03/03/12 22:43</td>
+                          <td>115.000 đ</td>
+                          <td>
+                            <button class="btn btn-outline-F2994A btn-xsm br-2px">Chờ duyệt</button>
+                          </td>
+                          <td> <a class="btn btn-success btn-xsm br-2px mr-2" href="16.order-detail.html">Xem</a><a class="btn btn-danger btn-xsm br-2px mr-2" href="#">Huỷ<a class="btn btn-secondary btn-xsm br-2px" href="#">Sửa</a></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>#1938</td>
+                          <td>03/03/12 22:43</td>
+                          <td>115.000 đ</td>
+                          <td>
+                            <button class="btn btn-outline-success btn-xsm br-2px">Đã duyệt</button>
+                          </td>
+                          <td> <a class="btn btn-success btn-xsm br-2px mr-2 see" href="16.order-detail.html">Xem</a><a class="btn btn-danger btn-xsm br-2px mr-2" href="#">Huỷ</a><a class="btn btn-secondary btn-xsm br-2px" href="#">Sửa</a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>#1938</td>
+                          <td>03/03/12 22:43</td>
+                          <td>115.000 đ</td>
+                          <td>
+                            <button class="btn btn-outline-danger btn-xsm br-2px">Đã huỷ</button>
+                          </td>
+                          <td> <a class="btn btn-success btn-xsm br-2px mr-2 see" href="16.order-detail.html">Xem</a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>#1938</td>
+                          <td>03/03/12 22:43</td>
+                          <td>115.000 đ</td>
+                          <td>
+                            <button class="btn btn-outline-F2994A btn-xsm br-2px">Chờ duyệt</button>
+                          </td>
+                          <td> <a class="btn btn-success btn-xsm br-2px mr-2 see" href="16.order-detail.html">Xem</a><a class="btn btn-danger btn-xsm br-2px mr-2" href="#">Huỷ<a class="btn btn-secondary btn-xsm br-2px" href="#">Sửa</a></a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>#1938</td>
+                          <td>03/03/12 22:43</td>
+                          <td>115.000 đ</td>
+                          <td>
+                            <button class="btn btn-outline-primary btn-xsm br-2px">Thành công</button>
+                          </td>
+                          <td> <a class="btn btn-success btn-xsm br-2px mr-2 see" href="16.order-detail.html">Xem</a><a class="btn btn-primary btn-xsm br-2px" href="#">Mua lại</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <div class="form-group d-block d-md-flex align-items-center">
-                    <label>Số điện thoại của bạn</label>
-                    <div class="form-input">
-                      <input class="form-control" placeholder="Số điện thoại" value="+8499999999"><img class="lazy" data-src="./assets/images/login-register/phone.svg">
-                    </div>
-                  </div>
-                  <div class="form-group d-block d-md-flex align-items-center">
-                    <label>Email của bạn</label>
-                    <div class="form-input">
-                      <input class="form-control" placeholder="Email" value="nguyenvana@gmail.com"><img class="lazy" data-src="./assets/images/login-register/fly.svg">
-                    </div>
-                  </div>
-                  <div class="form-group d-block d-md-flex align-items-center">
-                    <label>Địa chỉ nhận hàng</label>
-                    <div class="form-input">
-                      <input class="form-control" placeholder="Địa chỉ nhận hàng" value="Thị Xã Cai Lậy, KCN mới Đại…"><img class="lazy" data-src="./assets/images/my-account/home.svg">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <button class="btn btn-primary">Cập nhật</button>
-                  </div>
-                </form>
+                                    <div class="table-bot">
+                                      <div class="show-row"><span>Hiện</span>
+                                        <div class="select">
+                                          <select>
+                                            <option value="1" selected="selected">20</option>
+                                            <option value="2">40</option>
+                                            <option value="3">60</option>
+                                          </select>
+                                        </div><span>dòng.</span>
+                                      </div>
+                                      <div class="component__pagination">
+                                        <div class="pagination">
+                                          <ul class="pagination__list">
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                </div>
               </div>
             </div>
           </div>
